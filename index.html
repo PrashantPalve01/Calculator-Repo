@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        h1{
+            color: rgb(55, 126, 128);
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+        }
+        #calculator{
+            width: 20%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,50px);
+            gap: 20px;
+        }
+        #calculator >div{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        #result{
+            grid-column: span 4;
+        }
+        #result input{
+            width: 100%;
+            box-sizing: border-box;
+            height: 100%;
+            border: none;
+        }
+        .op{
+            background-color: black;
+            color: white;
+        }
+        #clear{
+            background-color: red;
+            counter-reset: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="calculator">
+        <div id="result"><input type="text" readonly></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="op">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="op">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="op">*</div>
+        <div id="clear">C</div>
+        <div>0</div>
+        <div class="op">=</div>
+        <div class="op">/</div>
+    </div>
+</body>
+</html>
