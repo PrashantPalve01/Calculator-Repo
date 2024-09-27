@@ -32,6 +32,11 @@
             align-items: center;
             border-radius: 5px;
         }
+        #calculator >div:hover{
+            background-color: red;
+            cursor: pointer;
+            background-color: rgb(226, 226, 226);
+        }
         #result{
             grid-column: span 4;
         }
@@ -45,9 +50,16 @@
             background-color: black;
             color: white;
         }
+        .op:hover{
+            color: black;
+        }
         #clear{
-            background-color: red;
-            counter-reset: white;
+            background-color:red;
+            color: white;
+        }
+        #clear:hover{
+            background-color:white !important;
+            color: red;
         }
     </style>
 </head>
